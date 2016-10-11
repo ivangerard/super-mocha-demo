@@ -20,6 +20,10 @@ npm run test:nyan     # run test with nyan report
 npm run test:custom   # run test with custom report
 ```
 
+## CI
+
+This repo is hooked to Travis CI with `.travis.yml` config. Check out `https://travis-ci.org/mhaidarh/super-mocha-demo`.
+
 ### Sample Output
 
 **Spec Report**
