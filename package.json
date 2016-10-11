@@ -1,0 +1,28 @@
+{
+  "name": "testing-everything",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src",
+  "scripts": {
+    "start": "node .",
+    "dev": "nodemon .",
+    "test": "mocha src/**/*.test.js",
+    "test:watch": "mocha -w src/**/*.test.js",
+    "test:awesome": "mocha src/**/*.test.js -w -R mochawesome --reporter-options reportDir=report,reportName=index",
+    "test:awesome:live": "mocha src/**/*.test.js -R mochawesome --reporter-options reportDir=report,reportName=index && live-server report",
+    "test:nyan": "mocha -w src/**/*.test.js -R nyan",
+    "test:custom": "mocha -w src/**/*.test.js -R landing"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "3.5.0",
+    "mocha": "3.1.0"
+  },
+  "devDependencies": {
+    "live-server": "1.1.0",
+    "mocha": "3.1.0",
+    "mochawesome": "1.5.3",
+    "opn-cli": "3.1.0"
+  }
+}
