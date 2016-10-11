@@ -57,7 +57,7 @@ describe('test some math functions', () => {
 		})
 		it('with expect', () => {
 			expect(math.isEven(8)).to.be.true
-			expect(math.isEven(num + 12)).to.be.false
+			expect(math.isEven(num + 12)).to.be.true
 		})
 	})
 
